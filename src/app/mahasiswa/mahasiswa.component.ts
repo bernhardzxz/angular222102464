@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { SidebarComponent } from "../sidebar/sidebar.component";
 import { FooterComponent } from "../footer/footer.component";
@@ -18,9 +18,14 @@ export class MahasiswaComponent implements AfterViewInit{
   data: any;
   table1: any;
 
-  constructor(private HttpClient: HttpClient) {}
+  constructor(private HttpClient: HttpClient, private renderer: Renderer2) {}
 
   ngAfterViewInit(): void {
+    this.renderer.removeClass(document.body, "sidebar-open");
+    this.renderer.addClass(document.body, "sidebar-closed");
+    this.renderer.addClass(document.body, "sidebar-collapse")
+
+
     this.table1 = $("#table1").DataTable();
 
     this.bindMahasiswa();
@@ -50,5 +55,13 @@ export class MahasiswaComponent implements AfterViewInit{
       });
       this.table1.draw(false);
     });
+  }
+
+  showTambahModal(): void {
+    $("#tambahModal").modal();
+  }
+
+  postRecord(): void{
+    
   }
 }
