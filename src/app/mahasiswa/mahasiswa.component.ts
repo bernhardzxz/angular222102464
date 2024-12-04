@@ -112,13 +112,13 @@ export class MahasiswaComponent implements AfterViewInit{
     tanggalLahir = encodeURIComponent(tanggalLahir);
     tempatLahir = encodeURIComponent(tempatLahir);
 
-    var url = "https://stmikpontianak.cloud/011100862/tampilMahasiswa.php" +
+    var url = "https://stmikpontianak.cloud/011100862/tambahMahasiswa.php" +
     "?alamat=" + alamat +
     "&jenisKelamin=" + jenisKelamin +
     "&jp=" + jp +
     "&nama=" + nama +
     "&nim=" + nim +
-    "&statusNikah=" + statusNikah +
+    "&statusPernikahan=" + statusNikah +
     "&tahunMasuk=" + tahunMasuk +
     "&tanggalLahir=" + tanggalLahir +
     "&tempatLahir=" + tempatLahir;
