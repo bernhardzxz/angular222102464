@@ -1,13 +1,14 @@
 import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
-import { HeaderComponent } from "../header/header.component";
-import { SidebarComponent } from "../sidebar/sidebar.component";
-import { FooterComponent } from "../footer/footer.component";
 import { HttpClient } from '@angular/common/http';
+import { HeaderComponent } from '../header/header.component';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { FooterComponent } from '../footer/footer.component';
 
 declare const $ : any;
 
 @Component({
     selector: 'app-mahasiswa',
+    // standalone : true,
     imports: [HeaderComponent, SidebarComponent, FooterComponent],
     templateUrl: './mahasiswa.component.html',
     styleUrl: './mahasiswa.component.css'
