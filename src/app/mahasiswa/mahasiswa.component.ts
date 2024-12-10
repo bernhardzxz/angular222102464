@@ -7,11 +7,10 @@ import { HttpClient } from '@angular/common/http';
 declare const $ : any;
 
 @Component({
-  selector: 'app-mahasiswa',
-  standalone: true,
-  imports: [HeaderComponent, SidebarComponent, FooterComponent],
-  templateUrl: './mahasiswa.component.html',
-  styleUrl: './mahasiswa.component.css'
+    selector: 'app-mahasiswa',
+    imports: [HeaderComponent, SidebarComponent, FooterComponent],
+    templateUrl: './mahasiswa.component.html',
+    styleUrl: './mahasiswa.component.css'
 })
 
 export class MahasiswaComponent implements AfterViewInit{

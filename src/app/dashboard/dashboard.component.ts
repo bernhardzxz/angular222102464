@@ -4,11 +4,10 @@ import { SidebarComponent } from "../sidebar/sidebar.component";
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
-  standalone: true,
-  imports: [RouterModule, HeaderComponent, SidebarComponent],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+    selector: 'app-dashboard',
+    imports: [RouterModule, HeaderComponent, SidebarComponent],
+    templateUrl: './dashboard.component.html',
+    styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
 
