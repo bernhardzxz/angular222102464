@@ -40,6 +40,8 @@ export class MahasiswaComponent implements AfterViewInit{
       data.forEach((element: any)=>{
         var tempatTanggalLahir = element.TempatLahir + ", " + element.TanggalLahir;
 
+        // const jenisKelaminFormatted = (element.jenisKelamin == "Perempuan" || element.jenisKelamin == "perempuan")? "<i class=></i>"
+
         var row = [
           element.NIM,
           element.Nama,
